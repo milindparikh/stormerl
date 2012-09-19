@@ -1,0 +1,19 @@
+-module(stormerlutils).
+-include_lib("../include/stormerlutils.hrl").
+-export([initmetadata/0, lsnodes/0]).
+
+
+initmetadata() -> 
+    {ok, Conn} = ezk:start_connection(),
+    ezk:create(Conn, ?STORMERL_ROOTPATH, list_to_binary("main root for stormerl")),
+    ezk:create(Conn, ?STORMERL_NODEPATH, list_to_binary("path for live nodes")),
+    ezk:end_connection(Conn, noreason).
+
+    
+lsnodes() -> 
+    {ok, Conn} = ezk:start_connection(),
+    {ok, ListNodes } = ezk:ls(Conn, ?STORMERL_NODEPATH),
+    ezk:end_connection(Conn, noreason), 
+    ListNodes.
+
+

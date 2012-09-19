@@ -1,0 +1,13 @@
+[{release,"mynode","1","5.9.2",
+          [{kernel,"2.15.2",
+                   "/home/milind/src/stormerl/rel/mynode/lib/kernel-2.15.2"},
+           {stdlib,"1.18.2",
+                   "/home/milind/src/stormerl/rel/mynode/lib/stdlib-1.18.2"},
+           {sasl,"2.2.1",
+                 "/home/milind/src/stormerl/rel/mynode/lib/sasl-2.2.1"},
+           {ezk,"1.0.1","/home/milind/src/stormerl/rel/mynode/lib/ezk-1.0.1"},
+           {stormerlnodes,"1.0.1",
+                          "/home/milind/src/stormerl/rel/mynode/lib/stormerlnodes-1.0.1"},
+           {stormerlutils,"1.0.1",
+                          "/home/milind/src/stormerl/rel/mynode/lib/stormerlutils-1.0.1"}],
+          permanent}].

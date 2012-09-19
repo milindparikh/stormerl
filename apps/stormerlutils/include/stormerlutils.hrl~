@@ -1,0 +1,5 @@
+-ifndef(stormerlutils_HRL). 
+-define(stormerlutils_HRL, 1).
+-define(STORMERL_ROOTPATH, "/stormerl").
+-define(STORMERL_NODEPATH, "/stormerl/nodes").
+-endif.

@@ -1,0 +1,9 @@
+-ifndef(stormerlutils_HRL). 
+-define(stormerlutils_HRL, 1).
+-define(STORMERL_ROOTPATH, "/stormerl").
+-define(STORMERL_NODEPATH, "/stormerl/nodes").
+-define(STORMERL_TOPOLOGYPATH, "/stormerl/topologies").
+-define(STORMERL_DEFTOPOLOGYPATH, "/stormerl/topologies/def").
+-define(STORMERL_ACTTOPOLOGYPATH, "/stormerl/topologies/active").
+-define(STORMERL_NODEWATCH, stormerl_nodewatch).
+-endif.

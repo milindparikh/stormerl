@@ -1,0 +1,12 @@
+{ "topology": 
+    {
+      "name": "WCTopology"
+      "spoutsandbolts": {
+       			"spout": {},
+       			"bolt": {},
+       			"bolt": {}
+      }
+    }
+}
+
+  

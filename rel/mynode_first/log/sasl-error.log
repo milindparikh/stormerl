@@ -1,0 +1,52 @@
+
+=CRASH REPORT==== 14-Sep-2012::16:44:57 ===
+  crasher:
+    initial call: ezk_connection_manager:init/1
+    pid: <0.50.0>
+    registered_name: ezk_connection_manager
+    exception exit: {{function_clause,
+                         [{gen,call,
+                              [{<0.56.0>,[]},'$gen_call',{die,shutdown},5000],
+                              [{file,"gen.erl"},{line,146}]},
+                          {gen_server,call,2,
+                              [{file,"gen_server.erl"},{line,176}]},
+                          {lists,map,2,[{file,"lists.erl"},{line,1173}]},
+                          {gen_server,terminate,6,
+                              [{file,"gen_server.erl"},{line,722}]},
+                          {proc_lib,init_p_do_apply,3,
+                              [{file,"proc_lib.erl"},{line,227}]}]},
+                     {gen_server,call,[{<0.56.0>,[]},{die,shutdown}]}}
+      in function  gen_server:terminate/6 (gen_server.erl, line 725)
+    ancestors: [ezk_sup,<0.48.0>]
+    messages: []
+    links: []
+    dictionary: []
+    trap_exit: true
+    status: running
+    heap_size: 610
+    stack_size: 24
+    reductions: 419
+  neighbours:
+
+=SUPERVISOR REPORT==== 14-Sep-2012::16:44:57 ===
+     Supervisor: {local,ezk_sup}
+     Context:    shutdown_error
+     Reason:     {{function_clause,
+                      [{gen,call,
+                           [{<0.56.0>,[]},'$gen_call',{die,shutdown},5000],
+                           [{file,"gen.erl"},{line,146}]},
+                       {gen_server,call,2,
+                           [{file,"gen_server.erl"},{line,176}]},
+                       {lists,map,2,[{file,"lists.erl"},{line,1173}]},
+                       {gen_server,terminate,6,
+                           [{file,"gen_server.erl"},{line,722}]},
+                       {proc_lib,init_p_do_apply,3,
+                           [{file,"proc_lib.erl"},{line,227}]}]},
+                  {gen_server,call,[{<0.56.0>,[]},{die,shutdown}]}}
+     Offender:   [{pid,<0.50.0>},
+                  {name,ezk_connection_manager},
+                  {mfargs,{ezk_connection_manager,start_link,[[]]}},
+                  {restart_type,permanent},
+                  {shutdown,5000},
+                  {child_type,worker}]
+
